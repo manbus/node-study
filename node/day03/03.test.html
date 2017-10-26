@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+
+      var number = 0;
+
+      function fun(){
+        console.log("fun 函数内部的this == ",this);
+
+
+        setTimeout(()=>{
+          console.log(this.number);
+        },1500);
+
+        setTimeout(function(){
+          console.log(this.number);
+        },1500);
+      }
+
+
+
+      // fun()
+      fun.call({number:100});
+    </script>
+
+  </body>
+</html>

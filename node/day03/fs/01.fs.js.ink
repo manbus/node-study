@@ -1,0 +1,1 @@
+/home/aq/文档/node-study/node/day03/fs/01.fs.js
